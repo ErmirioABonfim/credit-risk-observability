@@ -1,27 +1,27 @@
-{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 0.438 > 0.2 em 'pay_3' (média -0.16 → -0.09; KS=0.064)", "window": "2026-02", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 0.335 > 0.2 em 'pay_2' (média -0.13 → -0.02; KS=0.072)", "window": "2026-02", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 48% das features com drift (limite 30%)", "window": "2026-02", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 1.066 > 0.2 em 'pay_3' (média -0.16 → 0.09; KS=0.144)", "window": "2026-03", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 0.802 > 0.2 em 'pay_2' (média -0.13 → 0.12; KS=0.148)", "window": "2026-03", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 76% das features com drift (limite 30%)", "window": "2026-03", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 1.699 > 0.2 em 'pay_3' (média -0.16 → 0.18; KS=0.211)", "window": "2026-04", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 1.289 > 0.2 em 'pay_2' (média -0.13 → 0.19; KS=0.200)", "window": "2026-04", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "age", "message": "PSI 0.251 > 0.2 em 'age' (média 35.42 → 31.9; KS=0.211)", "window": "2026-04", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 76% das features com drift (limite 30%)", "window": "2026-04", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "concept_drift", "message": "AUC caiu 0.066 (0.766 → 0.701) — degradação do modelo", "window": "2026-04", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "target_drift", "message": "Taxa de default observada 22.1% → 30.1%", "window": "2026-04", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 2.354 > 0.2 em 'pay_3' (média -0.16 → 0.35; KS=0.277)", "window": "2026-05", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 1.731 > 0.2 em 'pay_2' (média -0.13 → 0.33; KS=0.266)", "window": "2026-05", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "age", "message": "PSI 0.505 > 0.2 em 'age' (média 35.42 → 30.2; KS=0.313)", "window": "2026-05", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_1", "message": "PSI 0.357 > 0.2 em 'pay_1' (média -0.01 → 0.46; KS=0.259)", "window": "2026-05", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 81% das features com drift (limite 30%)", "window": "2026-05", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "concept_drift", "message": "AUC caiu 0.062 (0.766 → 0.704) — degradação do modelo", "window": "2026-05", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "target_drift", "message": "Taxa de default observada 22.1% → 31.4%", "window": "2026-05", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 3.072 > 0.2 em 'pay_3' (média -0.16 → 0.43; KS=0.348)", "window": "2026-06", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 2.340 > 0.2 em 'pay_2' (média -0.13 → 0.45; KS=0.342)", "window": "2026-06", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "age", "message": "PSI 0.601 > 0.2 em 'age' (média 35.42 → 29.87; KS=0.342)", "window": "2026-06", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_1", "message": "PSI 0.449 > 0.2 em 'pay_1' (média -0.01 → 0.48; KS=0.285)", "window": "2026-06", "run_id": "4ad40b857f7b"}
-{"severity": "warning", "type": "feature_drift", "feature": "pay_amt_1", "message": "PSI 0.274 > 0.2 em 'pay_amt_1' (média 5751.77 → 3442.25; KS=0.202)", "window": "2026-06", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 81% das features com drift (limite 30%)", "window": "2026-06", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "concept_drift", "message": "AUC caiu 0.060 (0.766 → 0.707) — degradação do modelo", "window": "2026-06", "run_id": "4ad40b857f7b"}
-{"severity": "critical", "type": "target_drift", "message": "Taxa de default observada 22.1% → 35.4%", "window": "2026-06", "run_id": "4ad40b857f7b"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 0.438 > 0.2 em 'pay_3' (média -0.16 → -0.09; KS=0.064)", "window": "2026-02", "run_id": "42dfa7c2e193"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 0.335 > 0.2 em 'pay_2' (média -0.13 → -0.02; KS=0.072)", "window": "2026-02", "run_id": "42dfa7c2e193"}
+{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 48% das features com drift (limite 30%)", "window": "2026-02", "run_id": "42dfa7c2e193"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 1.066 > 0.2 em 'pay_3' (média -0.16 → 0.09; KS=0.144)", "window": "2026-03", "run_id": "700c69690478"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 0.802 > 0.2 em 'pay_2' (média -0.13 → 0.12; KS=0.148)", "window": "2026-03", "run_id": "700c69690478"}
+{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 76% das features com drift (limite 30%)", "window": "2026-03", "run_id": "700c69690478"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 1.699 > 0.2 em 'pay_3' (média -0.16 → 0.18; KS=0.211)", "window": "2026-04", "run_id": "c6c74de57da4"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 1.289 > 0.2 em 'pay_2' (média -0.13 → 0.19; KS=0.200)", "window": "2026-04", "run_id": "c6c74de57da4"}
+{"severity": "warning", "type": "feature_drift", "feature": "age", "message": "PSI 0.251 > 0.2 em 'age' (média 35.42 → 31.9; KS=0.211)", "window": "2026-04", "run_id": "c6c74de57da4"}
+{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 76% das features com drift (limite 30%)", "window": "2026-04", "run_id": "c6c74de57da4"}
+{"severity": "critical", "type": "concept_drift", "message": "AUC caiu 0.066 (0.766 → 0.701) — degradação do modelo", "window": "2026-04", "run_id": "c6c74de57da4"}
+{"severity": "critical", "type": "target_drift", "message": "Taxa de default observada 22.1% → 30.1%", "window": "2026-04", "run_id": "c6c74de57da4"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 2.354 > 0.2 em 'pay_3' (média -0.16 → 0.35; KS=0.277)", "window": "2026-05", "run_id": "f12e9fea4906"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 1.731 > 0.2 em 'pay_2' (média -0.13 → 0.33; KS=0.266)", "window": "2026-05", "run_id": "f12e9fea4906"}
+{"severity": "warning", "type": "feature_drift", "feature": "age", "message": "PSI 0.505 > 0.2 em 'age' (média 35.42 → 30.2; KS=0.313)", "window": "2026-05", "run_id": "f12e9fea4906"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_1", "message": "PSI 0.357 > 0.2 em 'pay_1' (média -0.01 → 0.46; KS=0.259)", "window": "2026-05", "run_id": "f12e9fea4906"}
+{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 81% das features com drift (limite 30%)", "window": "2026-05", "run_id": "f12e9fea4906"}
+{"severity": "critical", "type": "concept_drift", "message": "AUC caiu 0.062 (0.766 → 0.704) — degradação do modelo", "window": "2026-05", "run_id": "f12e9fea4906"}
+{"severity": "critical", "type": "target_drift", "message": "Taxa de default observada 22.1% → 31.4%", "window": "2026-05", "run_id": "f12e9fea4906"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_3", "message": "PSI 3.072 > 0.2 em 'pay_3' (média -0.16 → 0.43; KS=0.348)", "window": "2026-06", "run_id": "baed280a1dd0"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_2", "message": "PSI 2.340 > 0.2 em 'pay_2' (média -0.13 → 0.45; KS=0.342)", "window": "2026-06", "run_id": "baed280a1dd0"}
+{"severity": "warning", "type": "feature_drift", "feature": "age", "message": "PSI 0.601 > 0.2 em 'age' (média 35.42 → 29.87; KS=0.342)", "window": "2026-06", "run_id": "baed280a1dd0"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_1", "message": "PSI 0.449 > 0.2 em 'pay_1' (média -0.01 → 0.48; KS=0.285)", "window": "2026-06", "run_id": "baed280a1dd0"}
+{"severity": "warning", "type": "feature_drift", "feature": "pay_amt_1", "message": "PSI 0.274 > 0.2 em 'pay_amt_1' (média 5751.77 → 3442.25; KS=0.202)", "window": "2026-06", "run_id": "baed280a1dd0"}
+{"severity": "critical", "type": "dataset_drift", "message": "Evidently: 81% das features com drift (limite 30%)", "window": "2026-06", "run_id": "baed280a1dd0"}
+{"severity": "critical", "type": "concept_drift", "message": "AUC caiu 0.060 (0.766 → 0.707) — degradação do modelo", "window": "2026-06", "run_id": "baed280a1dd0"}
+{"severity": "critical", "type": "target_drift", "message": "Taxa de default observada 22.1% → 35.4%", "window": "2026-06", "run_id": "baed280a1dd0"}

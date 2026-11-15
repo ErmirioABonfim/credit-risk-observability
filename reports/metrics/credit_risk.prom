@@ -6,7 +6,7 @@ credit_pipeline_success{window="2026-06"} 1.0
 credit_pipeline_rows_processed{window="2026-06"} 1997.0
 # HELP credit_pipeline_latency_ms latência total do job
 # TYPE credit_pipeline_latency_ms gauge
-credit_pipeline_latency_ms{window="2026-06"} 2474.7
+credit_pipeline_latency_ms{window="2026-06"} 4369.9
 # HELP credit_model_auc AUC na janela
 # TYPE credit_model_auc gauge
 credit_model_auc{window="2026-06"} 0.7067

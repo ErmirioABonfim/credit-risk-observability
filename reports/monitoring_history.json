@@ -1,7 +1,7 @@
 [
   {
     "window": "2026-01",
-    "run_id": "4ad40b857f7b",
+    "run_id": "a694f3aaaaa8",
     "status": "success",
     "rows_in": 1998,
     "rows_rejected": 0,
@@ -123,33 +123,33 @@
     "stages": {
       "ingest": {
         "rows": 1998,
-        "duration_ms": 10.2
+        "duration_ms": 29.8
       },
       "validate_contract": {
         "status": "success",
         "rows_valid": 1998
       },
       "inference": {
-        "latency_ms_per_1k": 1.7,
-        "duration_ms": 11.3
+        "latency_ms_per_1k": 1.91,
+        "duration_ms": 14.2
       },
       "drift_detection": {
         "n_drifted_psi": 0,
         "evidently_share": 0.095,
         "tests_failed": 0,
-        "duration_ms": 3928.6
+        "duration_ms": 4323.3
       },
       "performance_monitoring": {
         "auc": 0.7745,
         "recall": 0.5611,
-        "duration_ms": 9.0
+        "duration_ms": 13.6
       }
     },
-    "total_latency_ms": 4043.0
+    "total_latency_ms": 4573.3
   },
   {
     "window": "2026-02",
-    "run_id": "4ad40b857f7b",
+    "run_id": "42dfa7c2e193",
     "status": "success",
     "rows_in": 1998,
     "rows_rejected": 0,
@@ -279,7 +279,7 @@
         "feature": "pay_3",
         "message": "PSI 0.438 > 0.2 em 'pay_3' (média -0.16 → -0.09; KS=0.064)",
         "window": "2026-02",
-        "run_id": "4ad40b857f7b"
+        "run_id": "42dfa7c2e193"
       },
       {
         "severity": "warning",
@@ -287,14 +287,14 @@
         "feature": "pay_2",
         "message": "PSI 0.335 > 0.2 em 'pay_2' (média -0.13 → -0.02; KS=0.072)",
         "window": "2026-02",
-        "run_id": "4ad40b857f7b"
+        "run_id": "42dfa7c2e193"
       },
       {
         "severity": "critical",
         "type": "dataset_drift",
         "message": "Evidently: 48% das features com drift (limite 30%)",
         "window": "2026-02",
-        "run_id": "4ad40b857f7b"
+        "run_id": "42dfa7c2e193"
       }
     ],
     "n_alerts": 3,
@@ -306,33 +306,33 @@
     "stages": {
       "ingest": {
         "rows": 1998,
-        "duration_ms": 12.3
+        "duration_ms": 28.4
       },
       "validate_contract": {
         "status": "success",
         "rows_valid": 1998
       },
       "inference": {
-        "latency_ms_per_1k": 1.81,
-        "duration_ms": 15.6
+        "latency_ms_per_1k": 2.15,
+        "duration_ms": 14.1
       },
       "drift_detection": {
         "n_drifted_psi": 2,
         "evidently_share": 0.476,
         "tests_failed": 1,
-        "duration_ms": 2381.3
+        "duration_ms": 4135.8
       },
       "performance_monitoring": {
         "auc": 0.7662,
         "recall": 0.5738,
-        "duration_ms": 7.4
+        "duration_ms": 8.2
       }
     },
-    "total_latency_ms": 2485.9
+    "total_latency_ms": 4362.1
   },
   {
     "window": "2026-03",
-    "run_id": "4ad40b857f7b",
+    "run_id": "700c69690478",
     "status": "success",
     "rows_in": 1998,
     "rows_rejected": 0,
@@ -468,7 +468,7 @@
         "feature": "pay_3",
         "message": "PSI 1.066 > 0.2 em 'pay_3' (média -0.16 → 0.09; KS=0.144)",
         "window": "2026-03",
-        "run_id": "4ad40b857f7b"
+        "run_id": "700c69690478"
       },
       {
         "severity": "warning",
@@ -476,14 +476,14 @@
         "feature": "pay_2",
         "message": "PSI 0.802 > 0.2 em 'pay_2' (média -0.13 → 0.12; KS=0.148)",
         "window": "2026-03",
-        "run_id": "4ad40b857f7b"
+        "run_id": "700c69690478"
       },
       {
         "severity": "critical",
         "type": "dataset_drift",
         "message": "Evidently: 76% das features com drift (limite 30%)",
         "window": "2026-03",
-        "run_id": "4ad40b857f7b"
+        "run_id": "700c69690478"
       }
     ],
     "n_alerts": 3,
@@ -495,33 +495,33 @@
     "stages": {
       "ingest": {
         "rows": 1998,
-        "duration_ms": 11.3
+        "duration_ms": 28.5
       },
       "validate_contract": {
         "status": "success",
         "rows_valid": 1998
       },
       "inference": {
-        "latency_ms_per_1k": 1.46,
+        "latency_ms_per_1k": 2.26,
         "duration_ms": 12.8
       },
       "drift_detection": {
         "n_drifted_psi": 2,
         "evidently_share": 0.762,
         "tests_failed": 4,
-        "duration_ms": 2291.8
+        "duration_ms": 4056.8
       },
       "performance_monitoring": {
         "auc": 0.7327,
         "recall": 0.5805,
-        "duration_ms": 8.9
+        "duration_ms": 10.9
       }
     },
-    "total_latency_ms": 2395.8
+    "total_latency_ms": 4278.7
   },
   {
     "window": "2026-04",
-    "run_id": "4ad40b857f7b",
+    "run_id": "c6c74de57da4",
     "status": "success",
     "rows_in": 1998,
     "rows_rejected": 0,
@@ -658,7 +658,7 @@
         "feature": "pay_3",
         "message": "PSI 1.699 > 0.2 em 'pay_3' (média -0.16 → 0.18; KS=0.211)",
         "window": "2026-04",
-        "run_id": "4ad40b857f7b"
+        "run_id": "c6c74de57da4"
       },
       {
         "severity": "warning",
@@ -666,7 +666,7 @@
         "feature": "pay_2",
         "message": "PSI 1.289 > 0.2 em 'pay_2' (média -0.13 → 0.19; KS=0.200)",
         "window": "2026-04",
-        "run_id": "4ad40b857f7b"
+        "run_id": "c6c74de57da4"
       },
       {
         "severity": "warning",
@@ -674,28 +674,28 @@
         "feature": "age",
         "message": "PSI 0.251 > 0.2 em 'age' (média 35.42 → 31.9; KS=0.211)",
         "window": "2026-04",
-        "run_id": "4ad40b857f7b"
+        "run_id": "c6c74de57da4"
       },
       {
         "severity": "critical",
         "type": "dataset_drift",
         "message": "Evidently: 76% das features com drift (limite 30%)",
         "window": "2026-04",
-        "run_id": "4ad40b857f7b"
+        "run_id": "c6c74de57da4"
       },
       {
         "severity": "critical",
         "type": "concept_drift",
         "message": "AUC caiu 0.066 (0.766 → 0.701) — degradação do modelo",
         "window": "2026-04",
-        "run_id": "4ad40b857f7b"
+        "run_id": "c6c74de57da4"
       },
       {
         "severity": "critical",
         "type": "target_drift",
         "message": "Taxa de default observada 22.1% → 30.1%",
         "window": "2026-04",
-        "run_id": "4ad40b857f7b"
+        "run_id": "c6c74de57da4"
       }
     ],
     "n_alerts": 6,
@@ -707,33 +707,33 @@
     "stages": {
       "ingest": {
         "rows": 1998,
-        "duration_ms": 9.9
+        "duration_ms": 29.1
       },
       "validate_contract": {
         "status": "success",
         "rows_valid": 1998
       },
       "inference": {
-        "latency_ms_per_1k": 1.34,
-        "duration_ms": 14.6
+        "latency_ms_per_1k": 1.89,
+        "duration_ms": 11.7
       },
       "drift_detection": {
         "n_drifted_psi": 3,
         "evidently_share": 0.762,
         "tests_failed": 8,
-        "duration_ms": 2417.6
+        "duration_ms": 4154.1
       },
       "performance_monitoring": {
         "auc": 0.7008,
         "recall": 0.5382,
-        "duration_ms": 8.9
+        "duration_ms": 7.2
       }
     },
-    "total_latency_ms": 2520.4
+    "total_latency_ms": 4378.6
   },
   {
     "window": "2026-05",
-    "run_id": "4ad40b857f7b",
+    "run_id": "f12e9fea4906",
     "status": "success",
     "rows_in": 1997,
     "rows_rejected": 0,
@@ -872,7 +872,7 @@
         "feature": "pay_3",
         "message": "PSI 2.354 > 0.2 em 'pay_3' (média -0.16 → 0.35; KS=0.277)",
         "window": "2026-05",
-        "run_id": "4ad40b857f7b"
+        "run_id": "f12e9fea4906"
       },
       {
         "severity": "warning",
@@ -880,7 +880,7 @@
         "feature": "pay_2",
         "message": "PSI 1.731 > 0.2 em 'pay_2' (média -0.13 → 0.33; KS=0.266)",
         "window": "2026-05",
-        "run_id": "4ad40b857f7b"
+        "run_id": "f12e9fea4906"
       },
       {
         "severity": "warning",
@@ -888,7 +888,7 @@
         "feature": "age",
         "message": "PSI 0.505 > 0.2 em 'age' (média 35.42 → 30.2; KS=0.313)",
         "window": "2026-05",
-        "run_id": "4ad40b857f7b"
+        "run_id": "f12e9fea4906"
       },
       {
         "severity": "warning",
@@ -896,28 +896,28 @@
         "feature": "pay_1",
         "message": "PSI 0.357 > 0.2 em 'pay_1' (média -0.01 → 0.46; KS=0.259)",
         "window": "2026-05",
-        "run_id": "4ad40b857f7b"
+        "run_id": "f12e9fea4906"
       },
       {
         "severity": "critical",
         "type": "dataset_drift",
         "message": "Evidently: 81% das features com drift (limite 30%)",
         "window": "2026-05",
-        "run_id": "4ad40b857f7b"
+        "run_id": "f12e9fea4906"
       },
       {
         "severity": "critical",
         "type": "concept_drift",
         "message": "AUC caiu 0.062 (0.766 → 0.704) — degradação do modelo",
         "window": "2026-05",
-        "run_id": "4ad40b857f7b"
+        "run_id": "f12e9fea4906"
       },
       {
         "severity": "critical",
         "type": "target_drift",
         "message": "Taxa de default observada 22.1% → 31.4%",
         "window": "2026-05",
-        "run_id": "4ad40b857f7b"
+        "run_id": "f12e9fea4906"
       }
     ],
     "n_alerts": 7,
@@ -929,33 +929,33 @@
     "stages": {
       "ingest": {
         "rows": 1997,
-        "duration_ms": 11.7
+        "duration_ms": 29.8
       },
       "validate_contract": {
         "status": "success",
         "rows_valid": 1997
       },
       "inference": {
-        "latency_ms_per_1k": 1.5,
-        "duration_ms": 10.7
+        "latency_ms_per_1k": 1.88,
+        "duration_ms": 11.7
       },
       "drift_detection": {
         "n_drifted_psi": 4,
         "evidently_share": 0.81,
         "tests_failed": 8,
-        "duration_ms": 2187.4
+        "duration_ms": 4201.2
       },
       "performance_monitoring": {
         "auc": 0.7041,
         "recall": 0.5863,
-        "duration_ms": 8.3
+        "duration_ms": 8.5
       }
     },
-    "total_latency_ms": 2286.8
+    "total_latency_ms": 4420.2
   },
   {
     "window": "2026-06",
-    "run_id": "4ad40b857f7b",
+    "run_id": "baed280a1dd0",
     "status": "success",
     "rows_in": 1997,
     "rows_rejected": 0,
@@ -1095,7 +1095,7 @@
         "feature": "pay_3",
         "message": "PSI 3.072 > 0.2 em 'pay_3' (média -0.16 → 0.43; KS=0.348)",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       },
       {
         "severity": "warning",
@@ -1103,7 +1103,7 @@
         "feature": "pay_2",
         "message": "PSI 2.340 > 0.2 em 'pay_2' (média -0.13 → 0.45; KS=0.342)",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       },
       {
         "severity": "warning",
@@ -1111,7 +1111,7 @@
         "feature": "age",
         "message": "PSI 0.601 > 0.2 em 'age' (média 35.42 → 29.87; KS=0.342)",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       },
       {
         "severity": "warning",
@@ -1119,7 +1119,7 @@
         "feature": "pay_1",
         "message": "PSI 0.449 > 0.2 em 'pay_1' (média -0.01 → 0.48; KS=0.285)",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       },
       {
         "severity": "warning",
@@ -1127,28 +1127,28 @@
         "feature": "pay_amt_1",
         "message": "PSI 0.274 > 0.2 em 'pay_amt_1' (média 5751.77 → 3442.25; KS=0.202)",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       },
       {
         "severity": "critical",
         "type": "dataset_drift",
         "message": "Evidently: 81% das features com drift (limite 30%)",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       },
       {
         "severity": "critical",
         "type": "concept_drift",
         "message": "AUC caiu 0.060 (0.766 → 0.707) — degradação do modelo",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       },
       {
         "severity": "critical",
         "type": "target_drift",
         "message": "Taxa de default observada 22.1% → 35.4%",
         "window": "2026-06",
-        "run_id": "4ad40b857f7b"
+        "run_id": "baed280a1dd0"
       }
     ],
     "n_alerts": 8,
@@ -1160,28 +1160,28 @@
     "stages": {
       "ingest": {
         "rows": 1997,
-        "duration_ms": 10.9
+        "duration_ms": 29.2
       },
       "validate_contract": {
         "status": "success",
         "rows_valid": 1997
       },
       "inference": {
-        "latency_ms_per_1k": 1.68,
-        "duration_ms": 10.9
+        "latency_ms_per_1k": 1.87,
+        "duration_ms": 14.4
       },
       "drift_detection": {
         "n_drifted_psi": 5,
         "evidently_share": 0.81,
         "tests_failed": 8,
-        "duration_ms": 2372.3
+        "duration_ms": 4157.3
       },
       "performance_monitoring": {
         "auc": 0.7067,
         "recall": 0.6181,
-        "duration_ms": 9.5
+        "duration_ms": 9.3
       }
     },
-    "total_latency_ms": 2474.7
+    "total_latency_ms": 4369.9
   }
 ]
