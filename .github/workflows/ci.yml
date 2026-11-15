@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt && pip install -e .
+      - name: Testes unitários (contratos + drift)
+        run: pytest -q
+
+  pipeline-smoke:
+    needs: tests
+    runs-on: ubuntu-latest
+    env:
+      MLFLOW_DISABLE_AGENT_HINT: "1"
+      PSEUDONYMIZATION_KEY: ${{ secrets.PSEUDONYMIZATION_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt && pip install -e .
+      - name: Pipeline completo (prepare -> train -> validate -> simulate -> monitor -> causal -> dashboard)
+        run: credit-risk run-all
+      - uses: actions/upload-artifact@v4
+        with:
+          name: monitoring-reports
+          path: |
+            reports/
+            logs/pipeline.jsonl
