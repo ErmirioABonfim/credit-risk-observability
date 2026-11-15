@@ -1,0 +1,41 @@
+# HELP credit_pipeline_success 1 se a janela foi processada com sucesso
+# TYPE credit_pipeline_success gauge
+credit_pipeline_success{window="2026-06"} 1.0
+# HELP credit_pipeline_rows_processed linhas ingeridas
+# TYPE credit_pipeline_rows_processed gauge
+credit_pipeline_rows_processed{window="2026-06"} 1997.0
+# HELP credit_pipeline_latency_ms latência total do job
+# TYPE credit_pipeline_latency_ms gauge
+credit_pipeline_latency_ms{window="2026-06"} 2474.7
+# HELP credit_model_auc AUC na janela
+# TYPE credit_model_auc gauge
+credit_model_auc{window="2026-06"} 0.7067
+# HELP credit_drift_share fração de features com drift (Evidently)
+# TYPE credit_drift_share gauge
+credit_drift_share{window="2026-06"} 0.8095
+# HELP credit_alerts_total alertas gerados
+# TYPE credit_alerts_total gauge
+credit_alerts_total{window="2026-06"} 8.0
+# HELP credit_feature_psi PSI por feature
+# TYPE credit_feature_psi gauge
+credit_feature_psi{feature="pay_3",window="2026-06"} 3.0716
+credit_feature_psi{feature="pay_2",window="2026-06"} 2.3403
+credit_feature_psi{feature="age",window="2026-06"} 0.6012
+credit_feature_psi{feature="pay_1",window="2026-06"} 0.4488
+credit_feature_psi{feature="pay_amt_1",window="2026-06"} 0.2744
+credit_feature_psi{feature="pay_amt_3",window="2026-06"} 0.1849
+credit_feature_psi{feature="limit_bal",window="2026-06"} 0.1787
+credit_feature_psi{feature="pay_amt_2",window="2026-06"} 0.171
+credit_feature_psi{feature="pay_amt_4",window="2026-06"} 0.1556
+credit_feature_psi{feature="pay_amt_6",window="2026-06"} 0.1463
+credit_feature_psi{feature="pay_amt_5",window="2026-06"} 0.1395
+credit_feature_psi{feature="bill_amt_3",window="2026-06"} 0.0782
+credit_feature_psi{feature="bill_amt_6",window="2026-06"} 0.0669
+credit_feature_psi{feature="bill_amt_1",window="2026-06"} 0.0606
+credit_feature_psi{feature="bill_amt_4",window="2026-06"} 0.0589
+credit_feature_psi{feature="bill_amt_2",window="2026-06"} 0.056
+credit_feature_psi{feature="bill_amt_5",window="2026-06"} 0.0513
+credit_feature_psi{feature="pay_6",window="2026-06"} 0.0061
+credit_feature_psi{feature="pay_5",window="2026-06"} 0.005
+credit_feature_psi{feature="pay_4",window="2026-06"} 0.0045
+credit_feature_psi{feature="education",window="2026-06"} 0.0038

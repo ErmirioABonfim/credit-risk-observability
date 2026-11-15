@@ -1,0 +1,1187 @@
+[
+  {
+    "window": "2026-01",
+    "run_id": "4ad40b857f7b",
+    "status": "success",
+    "rows_in": 1998,
+    "rows_rejected": 0,
+    "mean_score": 0.2155,
+    "psi": {
+      "bill_amt_6": 0.0096,
+      "bill_amt_5": 0.0087,
+      "pay_3": 0.0074,
+      "pay_2": 0.0072,
+      "limit_bal": 0.0071,
+      "pay_amt_3": 0.0059,
+      "pay_4": 0.0057,
+      "bill_amt_4": 0.0055,
+      "pay_amt_5": 0.0051,
+      "bill_amt_1": 0.0051,
+      "bill_amt_2": 0.005,
+      "pay_amt_1": 0.0041,
+      "pay_amt_6": 0.0038,
+      "pay_6": 0.0036,
+      "pay_amt_2": 0.0035,
+      "pay_1": 0.0035,
+      "bill_amt_3": 0.0034,
+      "pay_amt_4": 0.0027,
+      "age": 0.0023,
+      "education": 0.0015,
+      "pay_5": 0.0013
+    },
+    "ks": {
+      "bill_amt_6": 0.0205,
+      "bill_amt_5": 0.0188,
+      "pay_3": 0.0147,
+      "pay_2": 0.0198,
+      "limit_bal": 0.0283,
+      "pay_amt_3": 0.0332,
+      "pay_4": 0.0101,
+      "bill_amt_4": 0.02,
+      "pay_amt_5": 0.0257,
+      "bill_amt_1": 0.0235,
+      "bill_amt_2": 0.0133,
+      "pay_amt_1": 0.036,
+      "pay_amt_6": 0.0267,
+      "pay_6": 0.0052,
+      "pay_amt_2": 0.0231,
+      "pay_1": 0.0127,
+      "bill_amt_3": 0.0183,
+      "pay_amt_4": 0.0257,
+      "age": 0.0158,
+      "education": 0.017,
+      "pay_5": 0.0091
+    },
+    "drifted_features_psi": [],
+    "drifted_features_evidently": [
+      "pay_amt_1",
+      "pay_amt_3"
+    ],
+    "share_drifted_evidently": 0.0952,
+    "dataset_drift": false,
+    "performance": {
+      "auc": 0.7745,
+      "gini": 0.5489,
+      "ks_separation": 0.4146,
+      "precision": 0.5061,
+      "recall": 0.5611,
+      "f1": 0.5322,
+      "approval_rate": 0.7548,
+      "observed_default_rate": 0.2212,
+      "predicted_default_rate": 0.2452
+    },
+    "tests": [
+      {
+        "name": "Share of Drifted Columns",
+        "status": "SUCCESS",
+        "description": "The drift is detected for 0% features (0 out of 21). The test threshold is lt=0.3"
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **limit_bal** is 0.046. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **age** is 0.056. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **pay_1** is 0.027. The drift detection method is Jensen-Shannon distance. The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **bill_amt_1** is 0.032. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **pay_amt_1** is 0.034. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **prediction_proba** is 0.033. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "ROC AUC Score",
+        "status": "SUCCESS",
+        "description": "The ROC AUC Score is 0.774. The test threshold is gte=0.716"
+      }
+    ],
+    "tests_failed": 0,
+    "alerts": [],
+    "n_alerts": 0,
+    "reports": {
+      "data_drift": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\data_drift_2026-01.html",
+      "model": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\model_performance_2026-01.html",
+      "tests": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\test_suite_2026-01.html"
+    },
+    "stages": {
+      "ingest": {
+        "rows": 1998,
+        "duration_ms": 10.2
+      },
+      "validate_contract": {
+        "status": "success",
+        "rows_valid": 1998
+      },
+      "inference": {
+        "latency_ms_per_1k": 1.7,
+        "duration_ms": 11.3
+      },
+      "drift_detection": {
+        "n_drifted_psi": 0,
+        "evidently_share": 0.095,
+        "tests_failed": 0,
+        "duration_ms": 3928.6
+      },
+      "performance_monitoring": {
+        "auc": 0.7745,
+        "recall": 0.5611,
+        "duration_ms": 9.0
+      }
+    },
+    "total_latency_ms": 4043.0
+  },
+  {
+    "window": "2026-02",
+    "run_id": "4ad40b857f7b",
+    "status": "success",
+    "rows_in": 1998,
+    "rows_rejected": 0,
+    "mean_score": 0.2382,
+    "psi": {
+      "pay_3": 0.4376,
+      "pay_2": 0.3352,
+      "pay_amt_5": 0.0752,
+      "pay_amt_6": 0.0681,
+      "pay_amt_4": 0.0646,
+      "age": 0.0413,
+      "pay_1": 0.0393,
+      "pay_amt_1": 0.0329,
+      "pay_amt_2": 0.0326,
+      "bill_amt_1": 0.0134,
+      "bill_amt_2": 0.0128,
+      "limit_bal": 0.0126,
+      "pay_amt_3": 0.0098,
+      "bill_amt_3": 0.0084,
+      "pay_4": 0.0074,
+      "pay_6": 0.0067,
+      "pay_5": 0.0062,
+      "bill_amt_5": 0.006,
+      "bill_amt_6": 0.0023,
+      "bill_amt_4": 0.0011,
+      "education": 0.0004
+    },
+    "ks": {
+      "pay_3": 0.0638,
+      "pay_2": 0.0724,
+      "pay_amt_5": 0.0891,
+      "pay_amt_6": 0.0731,
+      "pay_amt_4": 0.0797,
+      "age": 0.0703,
+      "pay_1": 0.071,
+      "pay_amt_1": 0.096,
+      "pay_amt_2": 0.0776,
+      "bill_amt_1": 0.0242,
+      "bill_amt_2": 0.0212,
+      "limit_bal": 0.0505,
+      "pay_amt_3": 0.0828,
+      "bill_amt_3": 0.017,
+      "pay_4": 0.0079,
+      "pay_6": 0.006,
+      "pay_5": 0.0074,
+      "bill_amt_5": 0.0198,
+      "bill_amt_6": 0.0252,
+      "bill_amt_4": 0.0145,
+      "education": 0.0042
+    },
+    "drifted_features_psi": [
+      "pay_3",
+      "pay_2"
+    ],
+    "drifted_features_evidently": [
+      "age",
+      "limit_bal",
+      "pay_2",
+      "pay_3",
+      "pay_amt_1",
+      "pay_amt_2",
+      "pay_amt_3",
+      "pay_amt_4",
+      "pay_amt_5",
+      "pay_amt_6"
+    ],
+    "share_drifted_evidently": 0.4762,
+    "dataset_drift": true,
+    "performance": {
+      "auc": 0.7662,
+      "gini": 0.5325,
+      "ks_separation": 0.4086,
+      "precision": 0.4929,
+      "recall": 0.5738,
+      "f1": 0.5303,
+      "approval_rate": 0.7197,
+      "observed_default_rate": 0.2407,
+      "predicted_default_rate": 0.2803
+    },
+    "tests": [
+      {
+        "name": "Share of Drifted Columns",
+        "status": "SUCCESS",
+        "description": "The drift is detected for 14.3% features (3 out of 21). The test threshold is lt=0.3"
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **limit_bal** is 0.077. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **age** is 0.107. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **pay_1** is 0.074. The drift detection method is Jensen-Shannon distance. The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **bill_amt_1** is 0.038. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **pay_amt_1** is 0.047. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **prediction_proba** is 0.086. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "ROC AUC Score",
+        "status": "SUCCESS",
+        "description": "The ROC AUC Score is 0.766. The test threshold is gte=0.716"
+      }
+    ],
+    "tests_failed": 1,
+    "alerts": [
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_3",
+        "message": "PSI 0.438 > 0.2 em 'pay_3' (média -0.16 → -0.09; KS=0.064)",
+        "window": "2026-02",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_2",
+        "message": "PSI 0.335 > 0.2 em 'pay_2' (média -0.13 → -0.02; KS=0.072)",
+        "window": "2026-02",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "dataset_drift",
+        "message": "Evidently: 48% das features com drift (limite 30%)",
+        "window": "2026-02",
+        "run_id": "4ad40b857f7b"
+      }
+    ],
+    "n_alerts": 3,
+    "reports": {
+      "data_drift": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\data_drift_2026-02.html",
+      "model": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\model_performance_2026-02.html",
+      "tests": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\test_suite_2026-02.html"
+    },
+    "stages": {
+      "ingest": {
+        "rows": 1998,
+        "duration_ms": 12.3
+      },
+      "validate_contract": {
+        "status": "success",
+        "rows_valid": 1998
+      },
+      "inference": {
+        "latency_ms_per_1k": 1.81,
+        "duration_ms": 15.6
+      },
+      "drift_detection": {
+        "n_drifted_psi": 2,
+        "evidently_share": 0.476,
+        "tests_failed": 1,
+        "duration_ms": 2381.3
+      },
+      "performance_monitoring": {
+        "auc": 0.7662,
+        "recall": 0.5738,
+        "duration_ms": 7.4
+      }
+    },
+    "total_latency_ms": 2485.9
+  },
+  {
+    "window": "2026-03",
+    "run_id": "4ad40b857f7b",
+    "status": "success",
+    "rows_in": 1998,
+    "rows_rejected": 0,
+    "mean_score": 0.2568,
+    "psi": {
+      "pay_3": 1.0662,
+      "pay_2": 0.8023,
+      "age": 0.1476,
+      "pay_1": 0.1266,
+      "pay_amt_1": 0.1024,
+      "pay_amt_4": 0.0911,
+      "pay_amt_5": 0.0762,
+      "pay_amt_2": 0.0655,
+      "pay_amt_6": 0.0596,
+      "pay_amt_3": 0.0575,
+      "limit_bal": 0.0431,
+      "bill_amt_1": 0.0341,
+      "bill_amt_2": 0.0239,
+      "bill_amt_3": 0.0183,
+      "bill_amt_4": 0.0152,
+      "bill_amt_5": 0.0109,
+      "bill_amt_6": 0.0102,
+      "pay_5": 0.0084,
+      "pay_6": 0.0053,
+      "pay_4": 0.0051,
+      "education": 0.001
+    },
+    "ks": {
+      "pay_3": 0.1438,
+      "pay_2": 0.1485,
+      "age": 0.1524,
+      "pay_1": 0.139,
+      "pay_amt_1": 0.1145,
+      "pay_amt_4": 0.0897,
+      "pay_amt_5": 0.0945,
+      "pay_amt_2": 0.0955,
+      "pay_amt_6": 0.0628,
+      "pay_amt_3": 0.0902,
+      "limit_bal": 0.0821,
+      "bill_amt_1": 0.0527,
+      "bill_amt_2": 0.0478,
+      "bill_amt_3": 0.0497,
+      "bill_amt_4": 0.0439,
+      "bill_amt_5": 0.054,
+      "bill_amt_6": 0.0607,
+      "pay_5": 0.0126,
+      "pay_6": 0.0122,
+      "pay_4": 0.0072,
+      "education": 0.014
+    },
+    "drifted_features_psi": [
+      "pay_3",
+      "pay_2"
+    ],
+    "drifted_features_evidently": [
+      "age",
+      "bill_amt_1",
+      "bill_amt_2",
+      "bill_amt_3",
+      "bill_amt_4",
+      "bill_amt_5",
+      "bill_amt_6",
+      "limit_bal",
+      "pay_2",
+      "pay_3",
+      "pay_amt_1",
+      "pay_amt_2",
+      "pay_amt_3",
+      "pay_amt_4",
+      "pay_amt_5",
+      "pay_amt_6"
+    ],
+    "share_drifted_evidently": 0.7619,
+    "dataset_drift": true,
+    "performance": {
+      "auc": 0.7327,
+      "gini": 0.4654,
+      "ks_separation": 0.3753,
+      "precision": 0.4534,
+      "recall": 0.5805,
+      "f1": 0.5092,
+      "approval_rate": 0.6777,
+      "observed_default_rate": 0.2518,
+      "predicted_default_rate": 0.3223
+    },
+    "tests": [
+      {
+        "name": "Share of Drifted Columns",
+        "status": "SUCCESS",
+        "description": "The drift is detected for 23.8% features (5 out of 21). The test threshold is lt=0.3"
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **limit_bal** is 0.142. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **age** is 0.212. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **pay_1** is 0.13. The drift detection method is Jensen-Shannon distance. The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **bill_amt_1** is 0.089. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "SUCCESS",
+        "description": "The drift score for the feature **pay_amt_1** is 0.069. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **prediction_proba** is 0.18. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "ROC AUC Score",
+        "status": "SUCCESS",
+        "description": "The ROC AUC Score is 0.733. The test threshold is gte=0.716"
+      }
+    ],
+    "tests_failed": 4,
+    "alerts": [
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_3",
+        "message": "PSI 1.066 > 0.2 em 'pay_3' (média -0.16 → 0.09; KS=0.144)",
+        "window": "2026-03",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_2",
+        "message": "PSI 0.802 > 0.2 em 'pay_2' (média -0.13 → 0.12; KS=0.148)",
+        "window": "2026-03",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "dataset_drift",
+        "message": "Evidently: 76% das features com drift (limite 30%)",
+        "window": "2026-03",
+        "run_id": "4ad40b857f7b"
+      }
+    ],
+    "n_alerts": 3,
+    "reports": {
+      "data_drift": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\data_drift_2026-03.html",
+      "model": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\model_performance_2026-03.html",
+      "tests": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\test_suite_2026-03.html"
+    },
+    "stages": {
+      "ingest": {
+        "rows": 1998,
+        "duration_ms": 11.3
+      },
+      "validate_contract": {
+        "status": "success",
+        "rows_valid": 1998
+      },
+      "inference": {
+        "latency_ms_per_1k": 1.46,
+        "duration_ms": 12.8
+      },
+      "drift_detection": {
+        "n_drifted_psi": 2,
+        "evidently_share": 0.762,
+        "tests_failed": 4,
+        "duration_ms": 2291.8
+      },
+      "performance_monitoring": {
+        "auc": 0.7327,
+        "recall": 0.5805,
+        "duration_ms": 8.9
+      }
+    },
+    "total_latency_ms": 2395.8
+  },
+  {
+    "window": "2026-04",
+    "run_id": "4ad40b857f7b",
+    "status": "success",
+    "rows_in": 1998,
+    "rows_rejected": 0,
+    "mean_score": 0.2637,
+    "psi": {
+      "pay_3": 1.6989,
+      "pay_2": 1.2886,
+      "age": 0.251,
+      "pay_1": 0.1909,
+      "pay_amt_4": 0.1159,
+      "pay_amt_1": 0.105,
+      "pay_amt_3": 0.101,
+      "pay_amt_5": 0.1005,
+      "pay_amt_2": 0.0961,
+      "pay_amt_6": 0.0924,
+      "limit_bal": 0.0712,
+      "bill_amt_1": 0.0589,
+      "bill_amt_2": 0.0351,
+      "bill_amt_3": 0.0302,
+      "bill_amt_4": 0.0235,
+      "bill_amt_6": 0.0228,
+      "bill_amt_5": 0.0207,
+      "pay_4": 0.0047,
+      "pay_6": 0.0038,
+      "pay_5": 0.0031,
+      "education": 0.0025
+    },
+    "ks": {
+      "pay_3": 0.2114,
+      "pay_2": 0.1996,
+      "age": 0.2114,
+      "pay_1": 0.1731,
+      "pay_amt_4": 0.106,
+      "pay_amt_1": 0.1207,
+      "pay_amt_3": 0.1284,
+      "pay_amt_5": 0.1079,
+      "pay_amt_2": 0.1102,
+      "pay_amt_6": 0.098,
+      "limit_bal": 0.0923,
+      "bill_amt_1": 0.0794,
+      "bill_amt_2": 0.0784,
+      "bill_amt_3": 0.0726,
+      "bill_amt_4": 0.0651,
+      "bill_amt_6": 0.0662,
+      "bill_amt_5": 0.0702,
+      "pay_4": 0.0141,
+      "pay_6": 0.0103,
+      "pay_5": 0.0094,
+      "education": 0.018
+    },
+    "drifted_features_psi": [
+      "pay_3",
+      "pay_2",
+      "age"
+    ],
+    "drifted_features_evidently": [
+      "age",
+      "bill_amt_1",
+      "bill_amt_2",
+      "bill_amt_3",
+      "bill_amt_4",
+      "bill_amt_5",
+      "bill_amt_6",
+      "limit_bal",
+      "pay_2",
+      "pay_3",
+      "pay_amt_1",
+      "pay_amt_2",
+      "pay_amt_3",
+      "pay_amt_4",
+      "pay_amt_5",
+      "pay_amt_6"
+    ],
+    "share_drifted_evidently": 0.7619,
+    "dataset_drift": true,
+    "performance": {
+      "auc": 0.7008,
+      "gini": 0.4016,
+      "ks_separation": 0.2854,
+      "precision": 0.4758,
+      "recall": 0.5382,
+      "f1": 0.5051,
+      "approval_rate": 0.6592,
+      "observed_default_rate": 0.3013,
+      "predicted_default_rate": 0.3408
+    },
+    "tests": [
+      {
+        "name": "Share of Drifted Columns",
+        "status": "FAIL",
+        "description": "The drift is detected for 66.7% features (14 out of 21). The test threshold is lt=0.3"
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **limit_bal** is 0.177. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **age** is 0.352. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **pay_1** is 0.158. The drift detection method is Jensen-Shannon distance. The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **bill_amt_1** is 0.177. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **pay_amt_1** is 0.101. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **prediction_proba** is 0.217. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "ROC AUC Score",
+        "status": "FAIL",
+        "description": "The ROC AUC Score is 0.701. The test threshold is gte=0.716"
+      }
+    ],
+    "tests_failed": 8,
+    "alerts": [
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_3",
+        "message": "PSI 1.699 > 0.2 em 'pay_3' (média -0.16 → 0.18; KS=0.211)",
+        "window": "2026-04",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_2",
+        "message": "PSI 1.289 > 0.2 em 'pay_2' (média -0.13 → 0.19; KS=0.200)",
+        "window": "2026-04",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "age",
+        "message": "PSI 0.251 > 0.2 em 'age' (média 35.42 → 31.9; KS=0.211)",
+        "window": "2026-04",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "dataset_drift",
+        "message": "Evidently: 76% das features com drift (limite 30%)",
+        "window": "2026-04",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "concept_drift",
+        "message": "AUC caiu 0.066 (0.766 → 0.701) — degradação do modelo",
+        "window": "2026-04",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "target_drift",
+        "message": "Taxa de default observada 22.1% → 30.1%",
+        "window": "2026-04",
+        "run_id": "4ad40b857f7b"
+      }
+    ],
+    "n_alerts": 6,
+    "reports": {
+      "data_drift": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\data_drift_2026-04.html",
+      "model": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\model_performance_2026-04.html",
+      "tests": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\test_suite_2026-04.html"
+    },
+    "stages": {
+      "ingest": {
+        "rows": 1998,
+        "duration_ms": 9.9
+      },
+      "validate_contract": {
+        "status": "success",
+        "rows_valid": 1998
+      },
+      "inference": {
+        "latency_ms_per_1k": 1.34,
+        "duration_ms": 14.6
+      },
+      "drift_detection": {
+        "n_drifted_psi": 3,
+        "evidently_share": 0.762,
+        "tests_failed": 8,
+        "duration_ms": 2417.6
+      },
+      "performance_monitoring": {
+        "auc": 0.7008,
+        "recall": 0.5382,
+        "duration_ms": 8.9
+      }
+    },
+    "total_latency_ms": 2520.4
+  },
+  {
+    "window": "2026-05",
+    "run_id": "4ad40b857f7b",
+    "status": "success",
+    "rows_in": 1997,
+    "rows_rejected": 0,
+    "mean_score": 0.2834,
+    "psi": {
+      "pay_3": 2.3543,
+      "pay_2": 1.7307,
+      "age": 0.5053,
+      "pay_1": 0.3566,
+      "pay_amt_2": 0.1657,
+      "pay_amt_1": 0.1471,
+      "pay_amt_4": 0.1324,
+      "limit_bal": 0.1242,
+      "pay_amt_5": 0.119,
+      "pay_amt_6": 0.1058,
+      "pay_amt_3": 0.1046,
+      "bill_amt_1": 0.0721,
+      "bill_amt_2": 0.0611,
+      "bill_amt_3": 0.0451,
+      "bill_amt_6": 0.0416,
+      "bill_amt_4": 0.0338,
+      "bill_amt_5": 0.0335,
+      "pay_6": 0.0052,
+      "pay_5": 0.0044,
+      "pay_4": 0.0039,
+      "education": 0.0025
+    },
+    "ks": {
+      "pay_3": 0.2767,
+      "pay_2": 0.2658,
+      "age": 0.3133,
+      "pay_1": 0.2589,
+      "pay_amt_2": 0.168,
+      "pay_amt_1": 0.1641,
+      "pay_amt_4": 0.1147,
+      "limit_bal": 0.1331,
+      "pay_amt_5": 0.1187,
+      "pay_amt_6": 0.1178,
+      "pay_amt_3": 0.1369,
+      "bill_amt_1": 0.0904,
+      "bill_amt_2": 0.0967,
+      "bill_amt_3": 0.0832,
+      "bill_amt_6": 0.0759,
+      "bill_amt_4": 0.0722,
+      "bill_amt_5": 0.0857,
+      "pay_6": 0.0109,
+      "pay_5": 0.0081,
+      "pay_4": 0.0062,
+      "education": 0.0132
+    },
+    "drifted_features_psi": [
+      "pay_3",
+      "pay_2",
+      "age",
+      "pay_1"
+    ],
+    "drifted_features_evidently": [
+      "age",
+      "bill_amt_1",
+      "bill_amt_2",
+      "bill_amt_3",
+      "bill_amt_4",
+      "bill_amt_5",
+      "bill_amt_6",
+      "limit_bal",
+      "pay_1",
+      "pay_2",
+      "pay_3",
+      "pay_amt_1",
+      "pay_amt_2",
+      "pay_amt_3",
+      "pay_amt_4",
+      "pay_amt_5",
+      "pay_amt_6"
+    ],
+    "share_drifted_evidently": 0.8095,
+    "dataset_drift": true,
+    "performance": {
+      "auc": 0.7041,
+      "gini": 0.4082,
+      "ks_separation": 0.2907,
+      "precision": 0.4628,
+      "recall": 0.5863,
+      "f1": 0.5173,
+      "approval_rate": 0.6029,
+      "observed_default_rate": 0.3135,
+      "predicted_default_rate": 0.3971
+    },
+    "tests": [
+      {
+        "name": "Share of Drifted Columns",
+        "status": "FAIL",
+        "description": "The drift is detected for 66.7% features (14 out of 21). The test threshold is lt=0.3"
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **limit_bal** is 0.248. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **age** is 0.537. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **pay_1** is 0.213. The drift detection method is Jensen-Shannon distance. The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **bill_amt_1** is 0.229. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **pay_amt_1** is 0.125. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **prediction_proba** is 0.316. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "ROC AUC Score",
+        "status": "FAIL",
+        "description": "The ROC AUC Score is 0.704. The test threshold is gte=0.716"
+      }
+    ],
+    "tests_failed": 8,
+    "alerts": [
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_3",
+        "message": "PSI 2.354 > 0.2 em 'pay_3' (média -0.16 → 0.35; KS=0.277)",
+        "window": "2026-05",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_2",
+        "message": "PSI 1.731 > 0.2 em 'pay_2' (média -0.13 → 0.33; KS=0.266)",
+        "window": "2026-05",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "age",
+        "message": "PSI 0.505 > 0.2 em 'age' (média 35.42 → 30.2; KS=0.313)",
+        "window": "2026-05",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_1",
+        "message": "PSI 0.357 > 0.2 em 'pay_1' (média -0.01 → 0.46; KS=0.259)",
+        "window": "2026-05",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "dataset_drift",
+        "message": "Evidently: 81% das features com drift (limite 30%)",
+        "window": "2026-05",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "concept_drift",
+        "message": "AUC caiu 0.062 (0.766 → 0.704) — degradação do modelo",
+        "window": "2026-05",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "target_drift",
+        "message": "Taxa de default observada 22.1% → 31.4%",
+        "window": "2026-05",
+        "run_id": "4ad40b857f7b"
+      }
+    ],
+    "n_alerts": 7,
+    "reports": {
+      "data_drift": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\data_drift_2026-05.html",
+      "model": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\model_performance_2026-05.html",
+      "tests": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\test_suite_2026-05.html"
+    },
+    "stages": {
+      "ingest": {
+        "rows": 1997,
+        "duration_ms": 11.7
+      },
+      "validate_contract": {
+        "status": "success",
+        "rows_valid": 1997
+      },
+      "inference": {
+        "latency_ms_per_1k": 1.5,
+        "duration_ms": 10.7
+      },
+      "drift_detection": {
+        "n_drifted_psi": 4,
+        "evidently_share": 0.81,
+        "tests_failed": 8,
+        "duration_ms": 2187.4
+      },
+      "performance_monitoring": {
+        "auc": 0.7041,
+        "recall": 0.5863,
+        "duration_ms": 8.3
+      }
+    },
+    "total_latency_ms": 2286.8
+  },
+  {
+    "window": "2026-06",
+    "run_id": "4ad40b857f7b",
+    "status": "success",
+    "rows_in": 1997,
+    "rows_rejected": 0,
+    "mean_score": 0.2986,
+    "psi": {
+      "pay_3": 3.0716,
+      "pay_2": 2.3403,
+      "age": 0.6012,
+      "pay_1": 0.4488,
+      "pay_amt_1": 0.2744,
+      "pay_amt_3": 0.1849,
+      "limit_bal": 0.1787,
+      "pay_amt_2": 0.171,
+      "pay_amt_4": 0.1556,
+      "pay_amt_6": 0.1463,
+      "pay_amt_5": 0.1395,
+      "bill_amt_3": 0.0782,
+      "bill_amt_6": 0.0669,
+      "bill_amt_1": 0.0606,
+      "bill_amt_4": 0.0589,
+      "bill_amt_2": 0.056,
+      "bill_amt_5": 0.0513,
+      "pay_6": 0.0061,
+      "pay_5": 0.005,
+      "pay_4": 0.0045,
+      "education": 0.0038
+    },
+    "ks": {
+      "pay_3": 0.3483,
+      "pay_2": 0.3415,
+      "age": 0.3424,
+      "pay_1": 0.2854,
+      "pay_amt_1": 0.2022,
+      "pay_amt_3": 0.1801,
+      "limit_bal": 0.1729,
+      "pay_amt_2": 0.1969,
+      "pay_amt_4": 0.1712,
+      "pay_amt_6": 0.1726,
+      "pay_amt_5": 0.1621,
+      "bill_amt_3": 0.105,
+      "bill_amt_6": 0.1007,
+      "bill_amt_1": 0.1084,
+      "bill_amt_4": 0.1005,
+      "bill_amt_2": 0.1074,
+      "bill_amt_5": 0.0949,
+      "pay_6": 0.0086,
+      "pay_5": 0.009,
+      "pay_4": 0.0077,
+      "education": 0.0198
+    },
+    "drifted_features_psi": [
+      "pay_3",
+      "pay_2",
+      "age",
+      "pay_1",
+      "pay_amt_1"
+    ],
+    "drifted_features_evidently": [
+      "age",
+      "bill_amt_1",
+      "bill_amt_2",
+      "bill_amt_3",
+      "bill_amt_4",
+      "bill_amt_5",
+      "bill_amt_6",
+      "limit_bal",
+      "pay_1",
+      "pay_2",
+      "pay_3",
+      "pay_amt_1",
+      "pay_amt_2",
+      "pay_amt_3",
+      "pay_amt_4",
+      "pay_amt_5",
+      "pay_amt_6"
+    ],
+    "share_drifted_evidently": 0.8095,
+    "dataset_drift": true,
+    "performance": {
+      "auc": 0.7067,
+      "gini": 0.4133,
+      "ks_separation": 0.2879,
+      "precision": 0.4921,
+      "recall": 0.6181,
+      "f1": 0.548,
+      "approval_rate": 0.5553,
+      "observed_default_rate": 0.354,
+      "predicted_default_rate": 0.4447
+    },
+    "tests": [
+      {
+        "name": "Share of Drifted Columns",
+        "status": "FAIL",
+        "description": "The drift is detected for 76.2% features (16 out of 21). The test threshold is lt=0.3"
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **limit_bal** is 0.306. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **age** is 0.577. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **pay_1** is 0.236. The drift detection method is Jensen-Shannon distance. The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **bill_amt_1** is 0.303. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **pay_amt_1** is 0.13. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "Drift per Column",
+        "status": "FAIL",
+        "description": "The drift score for the feature **prediction_proba** is 0.394. The drift detection method is Wasserstein distance (normed). The drift detection threshold is 0.1."
+      },
+      {
+        "name": "ROC AUC Score",
+        "status": "FAIL",
+        "description": "The ROC AUC Score is 0.707. The test threshold is gte=0.716"
+      }
+    ],
+    "tests_failed": 8,
+    "alerts": [
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_3",
+        "message": "PSI 3.072 > 0.2 em 'pay_3' (média -0.16 → 0.43; KS=0.348)",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_2",
+        "message": "PSI 2.340 > 0.2 em 'pay_2' (média -0.13 → 0.45; KS=0.342)",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "age",
+        "message": "PSI 0.601 > 0.2 em 'age' (média 35.42 → 29.87; KS=0.342)",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_1",
+        "message": "PSI 0.449 > 0.2 em 'pay_1' (média -0.01 → 0.48; KS=0.285)",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "warning",
+        "type": "feature_drift",
+        "feature": "pay_amt_1",
+        "message": "PSI 0.274 > 0.2 em 'pay_amt_1' (média 5751.77 → 3442.25; KS=0.202)",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "dataset_drift",
+        "message": "Evidently: 81% das features com drift (limite 30%)",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "concept_drift",
+        "message": "AUC caiu 0.060 (0.766 → 0.707) — degradação do modelo",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      },
+      {
+        "severity": "critical",
+        "type": "target_drift",
+        "message": "Taxa de default observada 22.1% → 35.4%",
+        "window": "2026-06",
+        "run_id": "4ad40b857f7b"
+      }
+    ],
+    "n_alerts": 8,
+    "reports": {
+      "data_drift": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\data_drift_2026-06.html",
+      "model": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\model_performance_2026-06.html",
+      "tests": "C:\\Users\\ermir\\Documents\\llm-local\\credit-risk-observability\\reports\\drift\\test_suite_2026-06.html"
+    },
+    "stages": {
+      "ingest": {
+        "rows": 1997,
+        "duration_ms": 10.9
+      },
+      "validate_contract": {
+        "status": "success",
+        "rows_valid": 1997
+      },
+      "inference": {
+        "latency_ms_per_1k": 1.68,
+        "duration_ms": 10.9
+      },
+      "drift_detection": {
+        "n_drifted_psi": 5,
+        "evidently_share": 0.81,
+        "tests_failed": 8,
+        "duration_ms": 2372.3
+      },
+      "performance_monitoring": {
+        "auc": 0.7067,
+        "recall": 0.6181,
+        "duration_ms": 9.5
+      }
+    },
+    "total_latency_ms": 2474.7
+  }
+]
