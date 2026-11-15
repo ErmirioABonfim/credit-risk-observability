@@ -1,0 +1,91 @@
+{
+  "model_name": "credit-scoring-xgb",
+  "features": [
+    "limit_bal",
+    "education",
+    "age",
+    "pay_1",
+    "pay_2",
+    "pay_3",
+    "pay_4",
+    "pay_5",
+    "pay_6",
+    "bill_amt_1",
+    "bill_amt_2",
+    "bill_amt_3",
+    "bill_amt_4",
+    "bill_amt_5",
+    "bill_amt_6",
+    "pay_amt_1",
+    "pay_amt_2",
+    "pay_amt_3",
+    "pay_amt_4",
+    "pay_amt_5",
+    "pay_amt_6"
+  ],
+  "threshold": 0.26,
+  "best_iteration": 105,
+  "holdout_metrics": {
+    "auc": 0.7664,
+    "gini": 0.5328,
+    "ks_separation": 0.4169,
+    "precision": 0.5055,
+    "recall": 0.5729,
+    "f1": 0.5371,
+    "approval_rate": 0.7492,
+    "observed_default_rate": 0.2214,
+    "predicted_default_rate": 0.2508
+  },
+  "fairness": {
+    "sex": {
+      "approval_rate": {
+        "masculino": 0.7134,
+        "feminino": 0.7718
+      },
+      "disparate_impact_ratio": 0.9243
+    },
+    "marriage": {
+      "approval_rate": {
+        "casado": 0.7336,
+        "solteiro": 0.7625,
+        "outros": 0.7045
+      },
+      "disparate_impact_ratio": 0.924
+    },
+    "age_band": {
+      "approval_rate": {
+        "18-25": 0.6928,
+        "26-35": 0.7745,
+        "36-50": 0.7649,
+        "51+": 0.632
+      },
+      "disparate_impact_ratio": 0.816
+    }
+  },
+  "feature_importance": {
+    "pay_1": 0.3614000082015991,
+    "pay_2": 0.16740000247955322,
+    "pay_3": 0.09239999949932098,
+    "pay_4": 0.034699998795986176,
+    "pay_6": 0.032099999487400055,
+    "pay_amt_4": 0.031300000846385956,
+    "pay_5": 0.027899999171495438,
+    "pay_amt_2": 0.027499999850988388,
+    "pay_amt_1": 0.026100000366568565,
+    "limit_bal": 0.023900000378489494,
+    "bill_amt_1": 0.023000000044703484,
+    "bill_amt_2": 0.017500000074505806,
+    "education": 0.017400000244379044,
+    "pay_amt_3": 0.016699999570846558,
+    "bill_amt_4": 0.015599999576807022,
+    "bill_amt_3": 0.015200000256299973,
+    "pay_amt_6": 0.01510000042617321,
+    "pay_amt_5": 0.014700000174343586,
+    "bill_amt_5": 0.013700000010430813,
+    "bill_amt_6": 0.013700000010430813,
+    "age": 0.01269999984651804
+  },
+  "train_rows": 12225,
+  "valid_rows": 2158,
+  "holdout_rows": 3596
+}
