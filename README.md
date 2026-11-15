@@ -118,6 +118,11 @@ O monitoramento foi desenhado para rodar **agendado, uma janela por execução**
 | CI/CD | GitHub Actions `schedule` | mensal (`0 9 1 * *`) + manual | [`.github/workflows/scheduled-monitoring.yml`](.github/workflows/scheduled-monitoring.yml) |
 | Produção (sugestão) | Airflow/cron | mensal para drift de features; trimestral para performance (rótulo de default chega com ~90 dias) | — |
 
+> **Evidência versionada:** os relatórios em `reports/` foram gerados por **6 execuções agendadas, uma a cada
+> 10 minutos** (estado zerado com `--reset`, depois `monitor --window next --dashboard` por disparo; ao fim do
+> 6º mês, `causal` + `dashboard`). Cada execução aparece com seu próprio `run_id` em `logs/pipeline.jsonl` e como
+> um run `monitor-AAAA-MM` no MLflow.
+
 ```powershell
 ./scripts/schedule_monitoring.ps1 -IntervalMinutes 10   # registra a tarefa
 credit-risk monitor --reset --window next               # (opcional) recomeça do 1º mês
