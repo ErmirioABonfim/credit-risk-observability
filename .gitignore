@@ -1,0 +1,19 @@
+# ambiente
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# dados (LGPD: nenhum dado de cliente é versionado; o pipeline regenera tudo a partir do dataset público)
+data/
+# MLflow local (regenerado pelo pipeline)
+mlflow.db
+mlruns/
+mlartifacts/
+# binário do modelo (versionado no MLflow Model Registry)
+models/*.joblib
+
+# relatórios Evidently: versionamos apenas o controle (jan) e o pior mês (jun) como evidência
+reports/drift/*.html
+!reports/drift/*_2026-01.html
+!reports/drift/*_2026-06.html
