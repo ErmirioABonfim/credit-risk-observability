@@ -1,0 +1,41 @@
+# Sequência de deploy: pipeline (batch) -> mlflow (tracking UI) + dashboard (relatórios)
+# docker compose up --build
+services:
+  pipeline:
+    build: .
+    command: ["credit-risk", "run-all"]
+    environment:
+      - PSEUDONYMIZATION_KEY=${PSEUDONYMIZATION_KEY:-dev-only-key-change-me}
+      - MLFLOW_TRACKING_URI=sqlite:////app/mlstore/mlflow.db
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+      - ./models:/app/models
+      - mlflow-store:/app/mlstore
+    # banco + artefatos do MLflow num volume compartilhado com o serviço de UI
+    working_dir: /app/mlstore
+
+  mlflow:
+    build: .
+    depends_on:
+      pipeline:
+        condition: service_completed_successfully
+    command: ["mlflow", "ui", "--backend-store-uri", "sqlite:////app/mlstore/mlflow.db", "--host", "0.0.0.0", "--port", "5000"]
+    working_dir: /app/mlstore
+    volumes:
+      - mlflow-store:/app/mlstore
+    ports: ["5000:5000"]
+
+  dashboard:
+    image: python:3.11-slim
+    depends_on:
+      pipeline:
+        condition: service_completed_successfully
+    command: ["python", "-m", "http.server", "8080", "--directory", "/reports"]
+    volumes:
+      - ./reports:/reports:ro
+    ports: ["8080:8080"]
+
+volumes:
+  mlflow-store:
