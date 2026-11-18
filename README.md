@@ -3,7 +3,7 @@
 **Tech Challenge — Fase 4 (MLET / PósTech)**
 Tema: Observabilidade Contínua, Detecção de Drift, Qualidade de Dados e Governança em Produção.
 
-> 🎥 **Vídeo STAR (≤ 5 min):** `<COLE AQUI O LINK DO VÍDEO>`
+> 🎥 **Vídeo STAR (≤ 5 min):** https://drive.google.com/file/d/1m5_d_ixoy1bVv1Jv3dF1wzNqYvd-sB5l/view?usp=sharing
 > 📊 **Dashboard:** [`reports/monitoring_dashboard.html`](reports/monitoring_dashboard.html) · **Análise causal:** [`reports/causal_analysis.md`](reports/causal_analysis.md)
 
 ---
